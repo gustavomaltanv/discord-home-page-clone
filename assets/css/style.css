@@ -1,0 +1,112 @@
+@import url("./reset.css");
+
+header,
+.header-actions,
+.about,
+.context {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background: url("../images/header-background.png") no-repeat center;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    color: #FFFFFF;
+    padding: 69px 24px 0px 24px;
+    gap: 20px;
+}
+
+.header-content h1,
+.context h1 {
+    font-family: 'Luckiest guy';
+    font-size: 3rem;
+}
+
+.second-section,
+.fourth-section {
+    background-color: #F6F6F6;
+}
+
+.header-actions {
+    gap: 16px;
+}
+
+.header-actions button {
+    border: none;
+    min-width: 381px;
+    height: 54px;
+    border-radius: 28px;
+}
+
+#download {
+    background-color: #FFFFFF;
+    color: #23272A;
+}
+
+#browser {
+    background-color: #23272A;
+    color: #FFFFFF;
+}
+
+.about {
+    gap: 27px;
+    padding: 40px 24px 40px 24px;
+}
+
+.context {
+    gap: 16px;
+}
+
+.context h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+
+footer {
+    background-color: #23272A;
+    text-align: center;
+    padding: 36px 0;
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        text-align: center;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .header-actions {
+        flex-flow: row;
+    }
+
+    .context {
+        width: 351px;
+    }
+    .context h3 {
+        font-size: 2.5rem;
+        font-weight: 800;
+    }
+
+    .first-section,
+    .third-section {
+        flex-direction: row;
+    }
+
+    .second-section {
+        flex-direction: row-reverse;
+    }
+
+    .fourth-section img {
+        max-width: 780px;
+    }
+
+    .fourth-section .context {
+        width: 45%;
+        text-align: center;
+    }
+}
